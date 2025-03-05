@@ -175,3 +175,49 @@ opacity: 90%;
     font-weight: bold;
 }
 
+#challenge-button {
+    background-color: #27A4D9; 
+    font-size: 20px;
+    border-radius: 1rem;
+    width: 500px;
+    height: 100px;
+    color: #C60000;
+    font-weight: bold;
+    border: #C60000 solid 5px;
+}
+
+#challenge-button:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+/* Challenge Popup */
+#challenge-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 30px solid #C60000;
+}
+
+#challenge-popup .popup-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+#challenge-popup .close-button {
+    border-radius: 1rem;
+    border: #C60000;
+    background-color: #C60000;
+    color: white;
+    font-weight: bold;
+    width: 30px;
+    cursor: pointer;
+}
+
+#challenge-popup .close-button:hover {
+    opacity: 80%;
+}
+

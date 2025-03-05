@@ -26,7 +26,9 @@
     </header>
 <!-- This is the main content of the page. -->
     <div id="home-content">
-        <button><a href="roadmap.html"><img src="images/roadmap.png" alt="" style="height: 80px;"> View Roadmap </a></button>
+         <button id="roadmap-button" onclick="openRoadmap()"><img src="images/roadmap.png" alt="" style="height: 80px;"> View Roadmap</button>
+
+         <button id="challenge-button" onclick="openChallenges()"><img src="images/target.png" alt="" style="height: 80px;"> View Challenges</button>
         <div id="shape">
             <p>DAILY READING STREAK ### </p>
         </div>
@@ -34,6 +36,15 @@
         <p> Current Book</p>
         </div>
     </div>
-    div
+    
+        <div class="log-popup" id="challenge-popup" style="display: none;">
+        <div class="popup-container">
+            <button type="button" class="close-button" onclick="closeChallenges()">X</button>
+            <h1>Your Challenges</h1>
+            <p>Track your reading challenges here!</p>
+            <ul id="challenge-list"></ul>
+        </div>
+    </div>
+    
 </body>
 </html>
