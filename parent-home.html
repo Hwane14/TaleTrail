@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="images/taletraillogo.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="pathway.js"></script> 
     <script src="script.js"></script>
     <title> Home - TaleTrail</title>
 </head>
@@ -70,5 +72,17 @@
             </div>
           </div>
           <button id="logHistoryButton" onclick="openLogHistory()">Log History</button>
+
+          <!-- Section for graph-->
+            <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
+                <div style="flex: 1;">
+                    <h2>Pages Read This Week</h2>
+                    <canvas id="pagesReadChart"></canvas>
+                </div>
+                <div style="flex: 1;">
+                    <h2>Time Spent Reading This Week</h2>
+                    <canvas id="timeSpentChart"></canvas>
+                </div>
+            </div>
 </body>
 </html>
