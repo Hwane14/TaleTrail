@@ -11,19 +11,28 @@
 <body>
     <header>
 <!-- This is the header of the page. It contains the logo, the name of the user, and the navigation bar. -->
- <div id="shape">
-        <p> Welcome back, {ChildName}!</p>
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fa-regular fa-user"></i>Welcome Back, {child name}</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="profile.html" class="navbar__links">
+                    Switch Profile
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links">
+                    Log Out
+                </a>
+            </li>
+        </ul>
     </div>
-        <nav>
-            <ul class="navbar">
-                <li><a href="children-home.html"><img src="images/taletraillogo.png" alt="Logo/Home" class="logo"></a></li>
-
-                <li><button><a href="profile.html"><img src="images/switchprofile.png" alt="" class="icon">Switch Profile</a></button></li>
-
-                <li><button><a href="index.html"><img src="images/exit.png" alt="" class="icon">Log Out</a></button></li>
-            </ul>
-        </nav>
-    </header>
+</nav>
 
 <!-- This is the main content of the page. -->
     <div id="children-home-content">
